@@ -1,21 +1,31 @@
 @font-face {
     font-family: GOUDHNDN;
-    src: url(../fonts/GOUDHNDN.ttf);
-    font-weight: 100;
+    src: url(/fonts/GOUDHNDN.ttf);
+    font-weight: 200;
+}
+::-webkit-scrollbar {
+    background-color: rgb(34, 34, 34);
+    width: 8px;
 }
 
-:root {
-    --font:
-        /*Здесь указываешь название и в конце запятая sans-serif */
-    ;
+::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(68, 68, 68);
+    border-radius: 5px;
 }
 
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
     background-color: #2d2d2d;
+    cursor: url(/curs/alternate_skyri/Skyrim-normal.cur), auto;
 }
 
 *,
@@ -41,7 +51,7 @@ footer {
 }
 
 header {
-    background: url(../img/bg/intro.jpg) center no-repeat;
+    background: url(/img/bg/intro.jpg) center no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
 
@@ -110,7 +120,10 @@ nav {
 }
 
 .nav_item:hover {
-    text-shadow: 1px 1px 5px #999, 1px -1px 5px #999, -1px 1px #999, -1px -1px #999;
+    color: rgb(228, 237, 255);
+    text-shadow: rgb(0, 51, 255) 0 0 15px;
+    cursor: url(/curs/alternate_skyri/Skyrim-normal.cur), auto;
+    transition: .4s;
 }
 
 .headline {
@@ -155,7 +168,7 @@ h4 {
 }
 
 .what_section {
-    background: url(../img/bg/1651661730_1-gamerwall-pro-p-talos-bog-krasivo-oboi-31.jpg) center no-repeat;
+    background: url(/img/bg/1651661730_1-gamerwall-pro-p-talos-bog-krasivo-oboi-31.jpg) center no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
     background-attachment: fixed;
@@ -181,7 +194,7 @@ h4 {
 }
 
 .dav_section{
-    background: url(../img/bg/photo_5210986552568694165_y.jpg) center no-repeat;
+    background: url(/img/bg/photo_5210986552568694165_y.jpg) center no-repeat;
     background-size: cover;
     -webkit-background-size: cover;   
 
@@ -211,9 +224,11 @@ h4 {
 }
 
 .ras_section {
-    background: url(../img/bg/bg.jpg) center no-repeat;
+    background: url(/img/bg/bg.jpg) center no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
+
+    background-color: rgba(0, 0, 0, 0.5);
 
     background-attachment: fixed;
 }
@@ -260,61 +275,61 @@ h4 {
 }
 
 .front_1 {
-    background: url(../img/ras/Bretons.jpg) center no-repeat;
+    background: url(/img/ras/Bretons.jpg) center no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
 }
 
 .front_2 {
-    background: url(../img/ras/Imperials.jpg) center no-repeat;
+    background: url(/img/ras/Imperials.jpg) center no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
 }
 
 .front_3 {
-    background: url(../img/ras/Nords.jpg) center no-repeat;
+    background: url(/img/ras/Nords.jpg) center no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
 }
 
 .front_4 {
-    background: url(../img/ras/Redguards.jpg) center no-repeat;
+    background: url(/img/ras/Redguards.jpg) center no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
 }
 
 .front_5 {
-    background: url(../img/ras/Khajiit.jpg) center no-repeat;
+    background: url(/img/ras/Khajiit.jpg) center no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
 }
 
 .front_6 {
-    background: url(../img/ras/Altmer.jpg) center no-repeat;
+    background: url(/img/ras/Altmer.jpg) center no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
 }
 
 .front_7 {
-    background: url(../img/ras/Bosmer.jpg) center no-repeat;
+    background: url(/img/ras/Bosmer.jpg) center no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
 }
 
 .front_8 {
-    background: url(../img/ras/Dunmer.jpg) center no-repeat;
+    background: url(/img/ras/Dunmer.jpg) center no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
 }
 
 .front_9 {
-    background: url(../img/ras/orcs.jpg) center no-repeat;
+    background: url(/img/ras/orcs.jpg) center no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
 }
 
 .front_10 {
-    background: url(../img/ras/agronim.jpg) center no-repeat;
+    background: url(/img/ras/agronim.jpg) center no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
 }
@@ -333,7 +348,7 @@ h4 {
 }
 
 .skill_section{
-    background: url(../img/bg/5f091078b248-800x450-2.jpg) center no-repeat;
+    background: url(/img/bg/5f091078b248-800x450-2.jpg) center no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
 
@@ -382,7 +397,7 @@ footer{
     padding: 25px 0;
     height: auto;
 
-    background: url(../img/bg/maxresdefault.jpg) center no-repeat;
+    background: url(/img/bg/maxresdefault.jpg) center no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
 
