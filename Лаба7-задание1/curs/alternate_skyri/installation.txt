@@ -1,0 +1,15 @@
+## Installation ##
+
+Place the cursor (ex. enhanced.swf) in [Skyrim installation folder]/Data/Interface and rename file to 'cursormenu.swf'
+
+## Uninstallation ##
+
+Simply remove the cursor file!
+
+---
+
+Enjoy :)
+
+Mod by:
+Kenney Vleugels
+www.kenney.nl

@@ -1,0 +1,431 @@
+@font-face {
+    font-family: GOUDHNDN;
+    src: url(../fonts/GOUDHNDN.ttf);
+    font-weight: 100;
+}
+
+:root {
+    --font:
+        /*Здесь указываешь название и в конце запятая sans-serif */
+    ;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2d2d2d;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    font-family: GOUDHNDN, sans-serif;
+    color: #f9f9f9;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+header,
+main,
+footer {
+    width: 100%;
+    height: auto;
+}
+
+header {
+    background: url(../img/bg/intro.jpg) center no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+
+    background-attachment: fixed;
+}
+
+.container {
+    display: block;
+    max-width: 1500px;
+    min-width: 320px;
+    height: auto;
+    margin: 0 auto;
+    padding: 25px;
+
+}
+
+
+.header_line {
+    padding: 15px 0;
+    height: auto;
+    min-width: 150px;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+
+.logo {
+    width: 50px;
+    align-self: flex-start;
+}
+
+.logo_nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo_img>a {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+
+    align-items: center;
+    font-size: 55px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_item {
+    font-size: 26px;
+}
+
+.nav_item:hover {
+    text-shadow: 1px 1px 5px #999, 1px -1px 5px #999, -1px 1px #999, -1px -1px #999;
+}
+
+.headline {
+    height: 100vh;
+}
+
+.headline>.container {
+    padding-top: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+
+    align-items: center;
+    justify-content: center;
+
+}
+
+.headline>.container>p {
+    font-size: 30px;
+}
+
+.headline>.container>h1 {
+    font-size: 100px;
+    max-width: 1000px;
+    text-align: center;
+}
+
+
+section>.container {
+    padding: 55px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    height: auto;
+}
+
+h4 {
+    font-size: 55px;
+}
+
+.what_section {
+    background: url(../img/bg/1651661730_1-gamerwall-pro-p-talos-bog-krasivo-oboi-31.jpg) center no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-attachment: fixed;
+}
+
+.contentbox_1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 55px;
+
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contentbox_1>img {
+    height: 700px;
+}
+
+.contentbox_1>p {
+    max-width: 800px;
+    font-size: 45px;
+}
+
+.dav_section{
+    background: url(../img/bg/photo_5210986552568694165_y.jpg) center no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;   
+
+    background-attachment: fixed;
+}
+
+.contentbox_2 {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    gap: 55px;
+
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contentbox_2  > p{
+    max-width: 800px;
+    font-size: 45px;
+    
+}
+
+.contentbox_2 > img{
+    width: 500px;
+    height: 500px;
+    border-radius: 250px;
+}
+
+.ras_section {
+    background: url(../img/bg/bg.jpg) center no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+
+    background-attachment: fixed;
+}
+
+.contentbox_4 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    row-gap: 25px;
+    column-gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards_box {
+    padding-top: 55px;
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    height: 500px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1s;
+}
+
+.side {
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    background: #333;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #555;
+    border-radius: 15px;
+}
+
+.front_1 {
+    background: url(../img/ras/Bretons.jpg) center no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+}
+
+.front_2 {
+    background: url(../img/ras/Imperials.jpg) center no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+}
+
+.front_3 {
+    background: url(../img/ras/Nords.jpg) center no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+}
+
+.front_4 {
+    background: url(../img/ras/Redguards.jpg) center no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+}
+
+.front_5 {
+    background: url(../img/ras/Khajiit.jpg) center no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+}
+
+.front_6 {
+    background: url(../img/ras/Altmer.jpg) center no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+}
+
+.front_7 {
+    background: url(../img/ras/Bosmer.jpg) center no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+}
+
+.front_8 {
+    background: url(../img/ras/Dunmer.jpg) center no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+}
+
+.front_9 {
+    background: url(../img/ras/orcs.jpg) center no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+}
+
+.front_10 {
+    background: url(../img/ras/agronim.jpg) center no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+}
+
+.back {
+    transform: rotateY(180deg) translateZ(1px);
+    font-size: 25px;
+    padding: 10px;
+
+    text-align: center;
+
+}
+
+.card_container:hover>.card {
+    transform: rotateY(-180deg);
+}
+
+.skill_section{
+    background: url(../img/bg/5f091078b248-800x450-2.jpg) center no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+
+    background-attachment: fixed;
+}
+
+.contentbox_3{
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    align-items: center;
+    justify-content: center;
+}
+
+h5{
+    font-size: 45px;
+    text-shadow: 3px 3px 7px blue, -3px 3px 7px blue, 3px -3px 7px blue, -3px -3px 7px blue;
+}
+
+.first_txt > p, .second_txt > p{
+    font-size: 35px;
+}
+
+.first_txt{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.second_txt{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.second_txt > h5{
+    text-align: right;
+}
+
+.second_txt > p{
+    text-align: right;
+}
+
+
+footer{
+    padding: 25px 0;
+    height: auto;
+
+    background: url(../img/bg/maxresdefault.jpg) center no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+
+    background-attachment: fixed;
+}
+
+footer > .container {
+    font-size: 45px;
+    text-align: center;
+}
+
+
+@media screen and (max-width:600px) {
+    .headline>.container>h1 {
+        font-size: 65px;
+    }
+
+    .contentbox_1>p {
+        font-size: 25px;
+    }
+
+    .contentbox_1 > p{
+        font-size: 25px;
+    }
+
+    .contentbox_1 > img{
+        width: 320px;
+        height: 560px;
+    }
+
+    .contentbox_2 > p{
+        font-size: 25px;
+    }
+
+    .contentbox_2 > img{
+        width: 300px;
+        height: 300px;
+        border-radius: 150px;
+    }
+
+    footer > .container {
+        font-size: 25px;
+        text-align: center;
+    }
+
+}
